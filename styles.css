@@ -1,0 +1,151 @@
+.header {
+  background-image: url(./img/01.bg.jpg);
+  height: 850px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.overley {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.menu {
+  padding-right: 15vw;
+  display: block;
+}
+.menu a {
+  font-family: Verdana, Geneva, sans-serif;
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  transition: color 0.4;
+}
+.menu a:hover {
+  color: #a3c9d3;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.514);
+  width: 190px;
+  height: 235px;
+  z-index: 1;
+}
+#drop {
+  height: 145px;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #a3c9d3;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.fa-caret-down {
+  color: white;
+}
+.fa-caret-down:hover {
+  color: #59a209;
+}
+form {
+  display: none;
+}
+select {
+  width: 80vw;
+  padding: 13px;
+  margin-bottom: 1.5vw;
+  color: #fff;
+  background-color: #142e2d;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+.box {
+  display: inline-block;
+  padding: 8px 16px 10px;
+  margin-top: 100px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: #a3c9d3;
+  border: 1px solid;
+  border-color: #a3c9d3;
+  transition: 0.3s;
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+}
+.box:hover {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+.header-1 {
+  background-image: url(./img/background-02.jpg);
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.header-2 {
+  background-image: url(./img/background-03.jpg);
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#absol {
+  top: 1490px;
+}
+#square {
+  color: #fff;
+  border: 1px solid #a3c9d3;
+  background-color: #a3c9d3;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1037px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  form {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  .logo a {
+    padding: 0;
+  }
+  .box {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #absol {
+    top: 3040px;
+  }
+}
